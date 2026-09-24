@@ -1,0 +1,43 @@
+{
+  "name": "pomo-cli",
+  "version": "0.1.0",
+  "description": "A no-nonsense terminal Pomodoro timer with streaks and stats — zero dependencies, works on Windows, macOS, and Linux.",
+  "type": "module",
+  "bin": {
+    "pomo": "bin/pomo.mjs",
+    "pomo-cli": "bin/pomo.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node bin/pomo.mjs"
+  },
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "productivity",
+    "focus",
+    "streak",
+    "stats",
+    "cli",
+    "terminal",
+    "developer-tools",
+    "cross-platform",
+    "zero-dependency"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/pomo-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/pomo-cli/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/pomo-cli#readme"
+}
