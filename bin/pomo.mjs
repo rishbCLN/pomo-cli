@@ -11,7 +11,7 @@ import { parseArgs, resolveConfig, HELP } from '../src/args.mjs';
 import { resolveDataFile } from '../src/paths.mjs';
 import { loadRecords, backupCorrupt } from '../src/store.mjs';
 import { computeStats } from '../src/stats.mjs';
-import { formatStatsTable, formatDuration } from '../src/format.mjs';
+import { formatStatsTable, formatDuration, formatTimestamp } from '../src/format.mjs';
 import { makeStyler, colorEnabled } from '../src/ui.mjs';
 import { runSession } from '../src/runner.mjs';
 
@@ -38,8 +38,7 @@ function readHistory(file, c) {
 }
 
 function formatLogLine(rec) {
-  const when = new Date(rec.ts);
-  const stamp = Number.isNaN(when.getTime()) ? String(rec.ts) : when.toISOString().replace('T', ' ').slice(0, 16);
+  const stamp = formatTimestamp(rec.ts);
   const mins = `${rec.minutes} min`.padStart(7);
   const task = rec.task ? `  ${rec.task}` : '';
   return `  ${stamp}  ${mins}${task}`;

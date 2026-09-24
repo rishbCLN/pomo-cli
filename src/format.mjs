@@ -20,6 +20,21 @@ export function formatDuration(totalSeconds) {
 }
 
 /**
+ * Format a record timestamp as a LOCAL wall-clock "YYYY-MM-DD HH:MM" stamp.
+ * Uses local calendar components (like stats' localDayNumber) so `log` and
+ * `stats` agree on which day a session belongs to; an unparseable value falls
+ * back to its raw string form.
+ * @param {string|number|Date} value
+ * @returns {string}
+ */
+export function formatTimestamp(value) {
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return String(value);
+  const pad2 = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad2(d.getMonth() + 1)}-${pad2(d.getDate())} ${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+}
+
+/**
  * A fixed-width progress bar from a 0..1 ratio.
  * @param {number} ratio  clamped to [0,1]
  * @param {number} width  clamped to >= 1
