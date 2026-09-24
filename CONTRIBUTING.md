@@ -25,7 +25,7 @@ is to keep it that way: fast, obvious, and cross-platform.
 ## Getting started
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pomo-cli.git
+git clone https://github.com/rishbCLN/pomo-cli.git
 cd pomo-cli
 node --test                 # run the suite
 node bin/pomo.mjs --help    # try it

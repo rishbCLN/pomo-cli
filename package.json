@@ -34,10 +34,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/pomo-cli.git"
+    "url": "https://github.com/rishbCLN/pomo-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/pomo-cli/issues"
+    "url": "https://github.com/rishbCLN/pomo-cli/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/pomo-cli#readme"
+  "homepage": "https://github.com/rishbCLN/pomo-cli#readme"
 }

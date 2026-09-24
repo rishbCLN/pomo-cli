@@ -1,6 +1,6 @@
 # pomo
 
-[![CI](https://github.com/YOUR_USERNAME/pomo-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/pomo-cli/actions/workflows/ci.yml)
+[![CI](https://github.com/rishbCLN/pomo-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/rishbCLN/pomo-cli/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/pomo-cli.svg)](https://www.npmjs.com/package/pomo-cli)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
